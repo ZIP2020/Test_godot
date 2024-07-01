@@ -6,14 +6,19 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=5
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
 
 [application]
 
-config/name="Test"
-config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/name="Squash the Creeps (3D)"
+config/icon="res://icon.png"
 
 [rendering]
 
-renderer/rendering_method="mobile"
+quality/driver/driver_name="GLES2"
+quality/filters/msaa=3
